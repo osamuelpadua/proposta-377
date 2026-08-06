@@ -3,163 +3,545 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proposta Comercial #376</title>
+  <title>Proposta Comercial #377 · Dra. Caroline Curvello</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <script>
+    // Define o tema antes da primeira pintura, para não piscar.
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem("proposta-377-theme"); } catch (e) {}
+      var prefereClaro = window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches;
+      var tema = (saved === "light" || saved === "dark") ? saved : (prefereClaro ? "light" : "dark");
+      document.documentElement.setAttribute("data-theme", tema);
+    })();
+  </script>
 </head>
 <body>
-  <div class="page">
-    <header class="topbar">
+  <div class="topline"></div>
+
+  <header class="topbar">
+    <div class="shell topbar-inner">
       <div class="topbar-brand">
-        <img class="logo" src="logo2.svg" alt="Logotipo Samuel Pádua">
+        <img class="logo logo--dark" src="logo2.svg" alt="Logotipo Samuel Pádua">
+        <img class="logo logo--light" src="logo.svg" alt="Logotipo Samuel Pádua">
       </div>
       <div class="topbar-contact">
         <a href="mailto:osamuelpadua@gmail.com">osamuelpadua@gmail.com</a>
         <a class="site-link" href="https://www.samuelpadua.com.br">www.samuelpadua.com.br</a>
       </div>
       <div class="topbar-proposal">
-        <p class="proposal-code">Proposta <strong>#376</strong></p>
-        <p class="proposal-date">06.07.2026</p>
+        <p class="proposal-code">Proposta <strong>#377</strong></p>
+        <p class="proposal-date">06.08.2026</p>
       </div>
-    </header>
 
-    <main class="content">
-      <section class="hero">
-        <h1 style="font-size: clamp(0.95rem, 1.5vw, 20px);">Redesign de interface para <span class="term-emph">revoluti.com.br</span></h1>
-        <p class="intro">
-          Proposta para atualização visual e de experiência do usuário do site da <strong>RevoluTI</strong>,
-          mantendo a estrutura atual de páginas e seções com foco em <strong>modernização do layout</strong> e melhoria da <strong>usabilidade</strong>.
-        </p>
+      <button class="theme-toggle" type="button" aria-label="Alternar entre tema claro e escuro" title="Alternar tema">
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.2M12 20.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M1.5 12h2.2M20.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg>
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+      </button>
+    </div>
+  </header>
 
+  <main>
+
+    <!-- ============ CAPA ============ -->
+    <section class="cover">
+      <div class="shell cover-inner">
+        <p class="eyebrow">Proposta comercial · 2026</p>
+        <h1>
+          Posicionamento Digital<br>
+          <span class="accent">Estratégico</span>
+        </h1>
+        <span class="rule"></span>
+        <p class="cover-tags">Identidade · Landing Page · Links na Bio · Templates de conteúdo</p>
+        <p class="cover-client">Preparada para <strong>Dra. Caroline Curvello</strong></p>
+      </div>
+    </section>
+
+    <!-- ============ DADOS DA PROPOSTA ============ -->
+    <section class="section">
+      <div class="shell">
         <div class="meta">
-          <div>
+          <div class="meta-card">
             <span>Cliente</span>
-            <strong>RevoluTI</strong>
+            <strong>Dra. Caroline Curvello</strong>
           </div>
-          <div>
+          <div class="meta-card">
             <span>Data</span>
-            <strong>06.07.2026</strong>
+            <strong>06.08.2026</strong>
           </div>
-          <div>
-            <span>Prazo</span>
-            <strong>7 a 10 dias úteis</strong>
+          <div class="meta-card">
+            <span>Entrega</span>
+            <strong>04.09.2026</strong>
+            <small>21 dias úteis</small>
+          </div>
+          <div class="meta-card">
+            <span>Validade</span>
+            <strong>07.08.2026</strong>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="hero-note">
-          <span>Destaque</span>
-          Projeto focado em melhorar a apresentação e a experiência do usuário, sem alterar a estrutura de conteúdo ou funcionalidades existentes.
+    <!-- ============ POR QUE ISSO IMPORTA ============ -->
+    <section class="section section--alt">
+      <div class="shell">
+        <div class="head-center">
+          <p class="eyebrow">Por que isso importa</p>
+          <h2 class="section-title">
+            Antes de marcar a primeira consulta, o paciente procura, compara e julga.
+          </h2>
         </div>
-      </section>
 
-      <section class="block">
-        <h2>Sobre o projeto</h2>
-        <p>
-          O site da RevoluTI será atualizado com um redesign completo da interface, priorizando uma apresentação mais clara, moderna e profissional.
-          O trabalho inclui revisão de tipografia, espaçamento, hierarquia visual, paleta de cores e organização das seções existentes.
-        </p>
-        <p>
-          Também serão revisados os botões e chamadas para ação, a responsividade em diferentes dispositivos e a padronização da identidade visual ao longo de todas as páginas.
-          A estrutura de conteúdo, o número de páginas e as funcionalidades do site serão mantidos.
-        </p>
-      </section>
-
-      <section class="block">
-        <div class="section-head">
-          <h2>Escopo do projeto</h2>
-          <span class="section-tag">Itens inclusos</span>
+        <div class="insights">
+          <article class="insight">
+            <h3>A procura por um profissional começa no Google — e quase sempre é local.</h3>
+            <p>Buscas do tipo “perto de mim” não mostram sites primeiro: mostram perfis do Google Meu Negócio, com mapa, avaliações e horário de atendimento.</p>
+          </article>
+          <article class="insight">
+            <h3>Um perfil do Google Meu Negócio com site vinculado sai na frente.</h3>
+            <p>O site é um dos sinais que o Google usa para entender que o negócio é real e relevante. Perfis completos, com site vinculado, tendem a aparecer melhor posicionados do que perfis sem site.</p>
+          </article>
+          <article class="insight">
+            <h3>Um site bem estruturado é o que sustenta esse posicionamento.</h3>
+            <p>Conteúdo claro, carregamento rápido e SEO bem trabalhado ajudam o Google a entender o que você faz e onde atende — e o perfil devolve visitas para o site, alimentando o ciclo.</p>
+          </article>
+          <article class="insight">
+            <h3>A identidade visual é o primeiro julgamento que o paciente faz.</h3>
+            <p>Depois de encontrar, ele decide se confia. E isso acontece antes de qualquer conversa — no perfil, no cartão, na fachada e no site.</p>
+          </article>
+          <article class="insight">
+            <h3>Um perfil no Instagram não é uma estrutura própria.</h3>
+            <p>Sem um site seu, toda a sua presença depende de uma plataforma que não te pertence. Marca, site e conteúdo falando a mesma língua é o que gera reconhecimento ao longo do tempo.</p>
+          </article>
         </div>
-        <ul class="simple-list">
-          <li>Redesign completo da interface (UI)</li>
-          <li>Melhoria da experiência do usuário (UX)</li>
-          <li>Atualização do layout para visual mais moderno</li>
-          <li>Ajustes de tipografia, espaçamento e hierarquia visual</li>
-          <li>Padronização de cores e identidade visual</li>
-          <li>Organização e refinamento das seções existentes</li>
-          <li>Melhorias na responsividade (desktop, tablet e mobile)</li>
-          <li>Revisão de botões e chamadas para ação (CTA)</li>
-        </ul>
-      </section>
 
-      <section class="grid-two">
-        <article class="block">
-          <h2>Investimento</h2>
-          <div class="price-line">
-            <span>Pagamento à vista</span>
-            <strong>R$ 1.900,00</strong>
-          </div>
-          <div class="price-line">
-            <span>Entrada + entrega</span>
-            <strong>2x de R$ 950,00</strong>
-          </div>
-          <button class="note-box copy-box" type="button" data-copy="16982006729" aria-label="Copiar chave Pix 16982006729">
-            <span>Chave Pix</span>
-            <strong>16982006729</strong>
-            <small class="copy-hint">Clique para copiar</small>
-          </button>
-          <p class="muted">
-            Parcelamentos acima de 2x ficam sujeitos às taxas da plataforma de pagamento.
-          </p>
-        </article>
+        <div class="stat-callout">
+          <strong>75%</strong>
+          <p>das pessoas julgam a credibilidade de uma empresa através do seu site <span>(Universidade de Stanford)</span>.</p>
+        </div>
+      </div>
+    </section>
 
-        <article class="block">
-          <h2>Condições</h2>
+    <!-- ============ O CAMINHO ============ -->
+    <section class="section">
+      <div class="shell">
+        <div class="head-center">
+          <p class="eyebrow">O caminho</p>
+          <h2 class="section-title big">
+            Quatro entregas que se conectam em uma presença única.
+          </h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-track" aria-hidden="true">
+            <span class="timeline-dot">1</span>
+            <span class="timeline-dot">2</span>
+            <span class="timeline-dot">3</span>
+            <span class="timeline-dot">4</span>
+          </div>
+          <ol class="timeline-cards">
+            <li>
+              <span class="timeline-num" aria-hidden="true">1</span>
+              <h3>Identidade Visual</h3>
+              <p>Logotipo, variações, paleta de cores e tipografia. Toda a base visual da marca, entregue em vetor.</p>
+            </li>
+            <li>
+              <span class="timeline-num" aria-hidden="true">2</span>
+              <h3>Landing Page</h3>
+              <p>O site da profissional: copy, design e programação, com hospedagem e domínio inclusos no primeiro ano.</p>
+            </li>
+            <li>
+              <span class="timeline-num" aria-hidden="true">3</span>
+              <h3>Links na Bio</h3>
+              <p>Uma página exclusiva para o link do Instagram, reunindo todos os seus canais de contato.</p>
+            </li>
+            <li>
+              <span class="timeline-num" aria-hidden="true">4</span>
+              <h3>Templates</h3>
+              <p>Quatro templates de conteúdo com a sua identidade visual, editáveis no Canva e prontos para publicar.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENTREGA 1 · IDENTIDADE VISUAL ============ -->
+    <section class="section section--alt">
+      <div class="shell service">
+        <div class="service-intro">
+          <p class="eyebrow">Entrega 01</p>
+          <h2 class="display">Identidade<br>Visual</h2>
+          <span class="rule rule--left"></span>
           <p>
-            O prazo é de 7 a 10 dias úteis, iniciando após o pagamento da entrada e o envio das informações e acessos necessários.
+            A construção completa da marca: logotipo desenhado em vetor, com todas as variações
+            necessárias para aplicar em qualquer lugar — do perfil no Instagram à placa do consultório —
+            sempre com a mesma qualidade.
           </p>
-          <p>
-            O segundo pagamento é realizado na entrega do projeto. O comprovante pode ser enviado por WhatsApp ou e-mail.
-          </p>
-          <div class="info-callout">
-            <span>Garantia pós-entrega</span>
-            30 dias de suporte para pequenos ajustes e correções após a entrega do projeto.
-          </div>
-        </article>
-      </section>
-
-      <section class="block">
-        <h2>Portfólio</h2>
-        <p>Alguns projetos desenvolvidos:</p>
-        <ul class="simple-list">
-          <li><a href="https://osamuelpadua.github.io/lyvos/">lyvos</a></li>
-          <li><a href="https://vitasage.com/">vitasage.com</a></li>
-          <li><a href="https://osamuelpadua.github.io/vital-agro/">vital-agro</a></li>
-          <li><a href="https://www.syphra.com.br/">syphra.com.br</a></li>
-          <li><a href="https://www.guilhermepilar.com.br/">guilhermepilar.com.br</a></li>
-        </ul>
-        <span class="portfolio-links-label">Veja mais no</span>
-        <div class="portfolio-links">
-          <a href="https://github.com/osamuelpadua" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            github.com/osamuelpadua
-          </a>
-          <a href="https://www.behance.net/osamuelpadua" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.969 16.927a2.561 2.561 0 0 0 1.901.677 2.501 2.501 0 0 0 1.531-.475c.362-.235.636-.584.779-.99h2.585a5.091 5.091 0 0 1-1.9 2.896 5.292 5.292 0 0 1-3.091.88 5.839 5.839 0 0 1-2.284-.433 4.871 4.871 0 0 1-1.723-1.211 5.657 5.657 0 0 1-1.08-1.874 7.057 7.057 0 0 1-.383-2.393c-.005-.8.129-1.595.396-2.349a5.313 5.313 0 0 1 5.088-3.604 4.87 4.87 0 0 1 2.376.563c.661.362 1.231.87 1.668 1.485a6.2 6.2 0 0 1 .943 2.133c.194.821.263 1.666.205 2.508h-7.699c-.063.79.184 1.574.688 2.187ZM6.947 4.084a8.065 8.065 0 0 1 1.928.198 4.29 4.29 0 0 1 1.49.638c.418.303.748.711.958 1.182.241.579.357 1.203.341 1.83a3.506 3.506 0 0 1-.506 1.961 3.726 3.726 0 0 1-1.503 1.287 3.588 3.588 0 0 1 2.027 1.437c.464.747.697 1.615.67 2.494a4.593 4.593 0 0 1-.423 2.032 3.945 3.945 0 0 1-1.163 1.413 5.114 5.114 0 0 1-1.683.807 7.135 7.135 0 0 1-1.928.259H0V4.084h6.947Zm-.235 12.9c.308.004.616-.029.916-.099a2.18 2.18 0 0 0 .766-.332c.228-.158.411-.371.534-.619.142-.317.208-.663.191-1.009a2.08 2.08 0 0 0-.642-1.715 2.618 2.618 0 0 0-1.696-.505h-3.54v4.279h3.471Zm13.635-5.967a2.13 2.13 0 0 0-1.654-.619 2.336 2.336 0 0 0-1.163.259 2.474 2.474 0 0 0-.738.62 2.359 2.359 0 0 0-.396.792c-.074.239-.12.485-.137.734h4.769a3.239 3.239 0 0 0-.679-1.785l-.002-.001Zm-13.813-.648a2.254 2.254 0 0 0 1.423-.433c.399-.355.607-.88.56-1.413a1.916 1.916 0 0 0-.178-.891 1.298 1.298 0 0 0-.495-.533 1.851 1.851 0 0 0-.711-.274 3.966 3.966 0 0 0-.835-.073H3.241v3.631h3.293v-.014ZM21.62 5.122h-5.976v1.527h5.976V5.122Z"/></svg>
-            behance.net/osamuelpadua
-          </a>
-          <a href="https://samuelpadua.com.br/" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 69 69" fill="currentColor" aria-hidden="true"><path d="M56.6245 35.9651C63.0467 43.6387 59.9063 55.9157 50.5768 59.5392C49.7342 59.8659 47.6566 60.5095 46.8195 60.5095H10.5981V38.4023L20.7424 48.3549L46.4083 48.281C48.3295 48.1265 49.086 45.9466 47.9991 44.452L29.6468 26.0271H46.679L56.6245 35.9651ZM55.7115 8.5027C56.5332 8.47906 57.9542 8.50274 58.4287 8.50267L58.4287 30.6151L48.3208 20.7717L23.039 20.7384C21.2747 20.8122 20.0661 22.2056 20.682 23.9408C20.8963 24.5457 22.5509 26.1989 23.1098 26.7954C28.2321 32.2624 33.8675 37.2818 39.0343 42.7113L39.2415 43.1298H22.4873L11.9921 32.6296C5.31254 23.5183 10.3322 9.84919 21.9324 8.65054C33.1878 8.56572 44.8118 8.5027 55.7115 8.5027Z"/></svg>
-            samuelpadua.com.br
-          </a>
         </div>
-      </section>
+        <div class="includes">
+          <p class="includes-label">O que inclui</p>
+          <ul>
+            <li class="dot">Logotipo principal desenhado em vetor</li>
+            <li class="dot">Variações: horizontal, vertical, reduzida e símbolo isolado</li>
+            <li class="dot">Versões monocromática, positiva e negativa, para fundos claros e escuros</li>
+            <li class="dot">Paleta de cores principal e de apoio, com códigos HEX, RGB e CMYK</li>
+            <li class="dot">Tipografia da marca: fonte principal, secundária e hierarquia de uso</li>
+            <li class="dot">Arquivos abertos em vetor (AI, SVG e PDF) e em imagem (PNG e JPG)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-      <section class="block">
-        <h2>Observações</h2>
-        <ul class="simple-list">
-          <li>Custos de hospedagem, domínio e serviços externos não estão inclusos nesta proposta.</li>
-          <li>Otimizações de desempenho serão aplicadas sempre que possível dentro do escopo.</li>
-        </ul>
-        <p class="proposal-validity">
-          Esta proposta é válida até o dia <strong>13/07/2026</strong>.
+    <!-- ============ ENTREGA 2 · LANDING PAGE ============ -->
+    <section class="section">
+      <div class="shell service">
+        <div class="service-intro">
+          <p class="eyebrow">Entrega 02</p>
+          <h2 class="display">Landing<br>Page</h2>
+          <span class="rule rule--left"></span>
+          <p>
+            O site da profissional, criado do zero e 100% focado em conversão. Eu escrevo a copy,
+            prototipo a estrutura, desenho o layout e faço toda a programação — você não precisa
+            contratar mais ninguém.
+          </p>
+        </div>
+        <div class="includes">
+          <p class="includes-label">O que inclui</p>
+          <ul>
+            <li class="dot">Copy completa do site, escrita por mim</li>
+            <li class="dot">Protótipo de baixa fidelidade (wireframe) para validar a estrutura e o fluxo da página antes do design</li>
+            <li class="dot">Protótipo de alta fidelidade: o layout final, exclusivo e alinhado à nova identidade visual</li>
+            <li class="dot">Programação e desenvolvimento da página</li>
+            <li class="dot">Layout responsivo para desktop, tablet e celular</li>
+            <li class="dot">Integração com WhatsApp e redes sociais</li>
+            <li class="dot">Certificado SSL — site reconhecido como seguro</li>
+            <li class="dot is-bonus">Hospedagem e domínio grátis pelo primeiro ano</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENTREGA 3 · LINKS NA BIO ============ -->
+    <section class="section section--alt">
+      <div class="shell service">
+        <div class="service-intro">
+          <p class="eyebrow">Entrega 03</p>
+          <h2 class="display">Página de<br>Links na Bio</h2>
+          <span class="rule rule--left"></span>
+          <p>
+            Além da landing page, uma página exclusiva para o link da bio do Instagram: rápida,
+            com a cara da marca e reunindo todos os caminhos de contato em um só lugar.
+          </p>
+        </div>
+        <div class="includes">
+          <p class="includes-label">O que inclui</p>
+          <ul>
+            <li class="dot">Página própria para o link da bio, no visual da marca</li>
+            <li class="dot">Acesso direto ao WhatsApp, redes sociais e localização</li>
+            <li class="dot">Botão de destaque para o site e para agendamento</li>
+            <li class="dot">Links livres, definidos por você: convênios, endereço, formulários, materiais ou qualquer outro destino que fizer sentido</li>
+            <li class="dot">Formulário personalizado — para pré-agendamento, lista de espera ou captação de contatos</li>
+            <li class="dot">Otimizada para abrir rápido no celular</li>
+            <li class="dot is-bonus">Hospedada junto com o site, sem custo adicional</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ENTREGA 4 · CONTEÚDO ============ -->
+    <section class="section">
+      <div class="shell service">
+        <div class="service-intro">
+          <p class="eyebrow">Entrega 04</p>
+          <h2 class="display">Templates<br>de Conteúdo</h2>
+          <span class="rule rule--left"></span>
+          <p>
+            Quatro templates de conteúdo criados sob medida com a sua identidade visual, prontos
+            para publicar no Instagram e nas demais redes. Você troca textos e fotos direto no Canva,
+            quantas vezes quiser, sem depender de mim e sem precisar saber design.
+          </p>
+        </div>
+        <div class="includes">
+          <p class="includes-label">O que inclui</p>
+          <ul>
+            <li class="dot">Quatro templates de conteúdo personalizados</li>
+            <li class="dot">Artes construídas com a sua nova identidade visual</li>
+            <li class="dot">100% editáveis no Canva, com estrutura pronta para trocar textos e imagens</li>
+            <li class="dot">Formatos prontos para publicação no Instagram e em outras redes</li>
+            <li class="dot">Reutilizáveis quantas vezes você quiser, sem prazo de validade</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUMO ============ -->
+    <section class="section section--alt">
+      <div class="shell">
+        <p class="eyebrow">Resumo</p>
+        <h2 class="section-title big">Tudo que está incluso</h2>
+
+        <div class="summary">
+          <article class="summary-item">
+            <span class="summary-check" aria-hidden="true">✓</span>
+            <div>
+              <h3>Identidade visual completa</h3>
+              <p>Logotipo e todas as variações em vetor, paleta de cores e tipografia.</p>
+            </div>
+          </article>
+          <article class="summary-item">
+            <span class="summary-check" aria-hidden="true">✓</span>
+            <div>
+              <h3>Landing page profissional</h3>
+              <p>O website da profissional, com a copy escrita por mim.</p>
+            </div>
+          </article>
+          <article class="summary-item">
+            <span class="summary-check" aria-hidden="true">✓</span>
+            <div>
+              <h3>Design e programação</h3>
+              <p>Layout exclusivo e desenvolvimento completo da página.</p>
+            </div>
+          </article>
+          <article class="summary-item">
+            <span class="summary-check" aria-hidden="true">✓</span>
+            <div>
+              <h3>Hospedagem e domínio grátis por 1 ano</h3>
+              <p>Sem custo adicional no primeiro ano de projeto.</p>
+            </div>
+          </article>
+          <article class="summary-item">
+            <span class="summary-check" aria-hidden="true">✓</span>
+            <div>
+              <h3>Página de links na bio</h3>
+              <p>Uma página extra, além da landing page, para o Instagram.</p>
+            </div>
+          </article>
+          <article class="summary-item">
+            <span class="summary-check" aria-hidden="true">✓</span>
+            <div>
+              <h3>Quatro templates de conteúdo</h3>
+              <p>Personalizados com a sua identidade visual e editáveis no Canva.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INVESTIMENTO ============ -->
+    <section class="section">
+      <div class="shell">
+        <p class="eyebrow">Investimento</p>
+        <h2 class="section-title big">O valor de cada entrega</h2>
+        <p class="section-sub">
+          Cada frente tem o seu valor individual. Contratadas juntas, o projeto sai por um valor fechado.
         </p>
-      </section>
-    </main>
-  </div>
+
+        <div class="invest">
+          <div class="invest-items">
+            <article class="price-row">
+              <span class="price-step">01</span>
+              <div class="price-info">
+                <h3>Identidade Visual</h3>
+                <p>Logotipo e variações em vetor, paleta de cores e tipografia</p>
+              </div>
+              <strong class="price-value">R$ 800</strong>
+            </article>
+
+            <article class="price-row">
+              <span class="price-step">02</span>
+              <div class="price-info">
+                <h3>Landing Page</h3>
+                <p>Copy, design e programação, com hospedagem e domínio no primeiro ano</p>
+              </div>
+              <strong class="price-value">R$ 1.800</strong>
+            </article>
+
+            <article class="price-row">
+              <span class="price-step">03</span>
+              <div class="price-info">
+                <h3>Página de Links na Bio</h3>
+                <p>Página exclusiva para o Instagram, com links livres e formulário</p>
+              </div>
+              <strong class="price-value">R$ 700</strong>
+            </article>
+
+            <article class="price-row">
+              <span class="price-step">04</span>
+              <div class="price-info">
+                <h3>Templates de Conteúdo</h3>
+                <p>Quatro templates personalizados e editáveis no Canva</p>
+              </div>
+              <strong class="price-value">R$ 400</strong>
+            </article>
+
+            <div class="price-total">
+              <span>Total das entregas</span>
+              <strong>R$ 3.700</strong>
+            </div>
+          </div>
+
+          <aside class="invest-offer">
+            <p class="offer-deadline">Condição válida até 07.08.2026</p>
+            <p class="invest-label">Nesta proposta</p>
+            <p class="offer-from">de <s>R$ 3.700</s> por</p>
+            <p class="invest-price"><span>3x de R$</span>600</p>
+            <p class="invest-terms">
+              sem juros · ou <strong>R$ 1.800</strong> à vista · parcelamento em mais vezes
+              no cartão, sujeito às taxas da plataforma
+            </p>
+
+            <div class="offer-perk">
+              <span>Acompanhamento e garantia · 3 meses</span>
+              <p>
+                Qualquer alteração ou edição no site, na página de links e nos templates,
+                sem custo adicional durante os três primeiros meses.
+              </p>
+            </div>
+
+            <div class="offer-note">
+              <span>Economia de R$ 1.900</span>
+              <p>
+                Você paga apenas o valor da landing page. Entram como bônus a identidade visual,
+                a página de links na bio, os templates de conteúdo e a hospedagem com domínio
+                pelo primeiro ano.
+              </p>
+            </div>
+
+            <div class="offer-alert">
+              <span>Fechamento em 24 horas</span>
+              <p>
+                Esta condição vale para o fechamento até <strong>07/08/2026</strong>. Após essa data,
+                cada entrega volta ao seu valor de tabela, totalizando R$ 3.700.
+              </p>
+            </div>
+
+            <button class="pix-box" type="button" data-copy="16982006729" aria-label="Copiar chave Pix 16982006729">
+              <span class="pix-label">Chave Pix</span>
+              <strong>16982006729</strong>
+              <small class="copy-hint">Clique para copiar</small>
+            </button>
+            <p class="fine-print">
+              O comprovante pode ser enviado por WhatsApp ou e-mail.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONDIÇÕES ============ -->
+    <section class="section section--alt">
+      <div class="shell">
+        <p class="eyebrow">Condições</p>
+        <h2 class="section-title big">Como funciona</h2>
+
+        <div class="conditions">
+          <div class="conditions-text">
+            <p>
+              O prazo total é de <strong>21 dias úteis</strong>, com início após a confirmação do
+              pagamento e o envio das informações e materiais necessários — referências visuais,
+              textos de apoio, fotos e acessos às contas. Com o fechamento em 07/08/2026, a entrega
+              está prevista para <strong>04/09/2026</strong>.
+            </p>
+            <p>
+              A identidade visual é aprovada antes do início da landing page, já que todo o design
+              da página, da bio e dos templates de conteúdo parte dela.
+            </p>
+            <div class="callout">
+              <span>Acompanhamento e garantia</span>
+              <p>3 meses de suporte para qualquer alteração ou edição após a entrega do projeto, sem custo adicional.</p>
+            </div>
+          </div>
+
+          <div class="conditions-list">
+            <h3>Etapas</h3>
+            <ol>
+              <li>Briefing e envio dos materiais</li>
+              <li>Criação e aprovação da identidade visual</li>
+              <li>Copy e protótipo de baixa fidelidade</li>
+              <li>Protótipo de alta fidelidade e programação da landing page</li>
+              <li>Página de links na bio</li>
+              <li>Entrega dos templates de conteúdo</li>
+              <li>Publicação, testes e ajustes finais</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ OBSERVAÇÕES ============ -->
+    <section class="section">
+      <div class="shell">
+        <p class="eyebrow">Observações</p>
+        <h2 class="section-title big">Pontos importantes</h2>
+
+        <ul class="notes">
+          <li>A hospedagem e o domínio são gratuitos no primeiro ano. A partir do segundo ano, a renovação é combinada à parte.</li>
+          <li>As fontes utilizadas na identidade visual são de uso livre ou com licença informada na entrega.</li>
+        </ul>
+
+        <p class="validity">
+          As condições desta proposta são válidas até o dia <strong>07/08/2026</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FECHAMENTO ============ -->
+    <section class="closing">
+      <div class="shell">
+        <p class="eyebrow">Samuel Pádua</p>
+        <h2>Pronta para<br><span class="accent">começar?</span></h2>
+        <span class="rule"></span>
+
+        <a class="whatsapp-btn"
+           href="https://wa.me/5516982006729?text=Ol%C3%A1%2C%20Samuel!%20Vi%20a%20proposta%20%23377%20e%20quero%20conversar."
+           target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.4"/></svg>
+          Falar no WhatsApp
+        </a>
+
+        <div class="closing-contact">
+          <a href="mailto:osamuelpadua@gmail.com">osamuelpadua@gmail.com</a>
+          <a href="https://www.samuelpadua.com.br" target="_blank" rel="noopener">www.samuelpadua.com.br</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
   <script>
+    // Troca de tema
+    (function () {
+      const toggle = document.querySelector(".theme-toggle");
+      if (!toggle) return;
+
+      const root = document.documentElement;
+
+      function rotular() {
+        const claro = root.getAttribute("data-theme") === "light";
+        toggle.setAttribute("aria-label", claro ? "Mudar para o tema escuro" : "Mudar para o tema claro");
+        toggle.setAttribute("title", claro ? "Tema escuro" : "Tema claro");
+      }
+
+      rotular();
+
+      toggle.addEventListener("click", function () {
+        const novo = root.getAttribute("data-theme") === "light" ? "dark" : "light";
+        root.setAttribute("data-theme", novo);
+        rotular();
+
+        try {
+          localStorage.setItem("proposta-377-theme", novo);
+        } catch (e) {
+          /* modo privado ou storage bloqueado: o tema vale só nesta sessão */
+        }
+      });
+    })();
+
+    // Copiar chave Pix
     (function () {
       const copyBox = document.querySelector("[data-copy]");
       if (!copyBox) return;
