@@ -19,6 +19,50 @@
       document.documentElement.setAttribute("data-theme", tema);
     })();
   </script>
+  <style>
+    /* Grade das entregas: quatro cartões, tudo que está incluso de relance */
+    .deliverables {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 48px;
+    }
+
+    .deliverable .includes-label {
+      margin-bottom: 12px;
+    }
+
+    .deliverable h3 {
+      margin-bottom: 18px;
+      font-family: "Archivo", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 800;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+    }
+
+    /* Card único de investimento, sem a coluna de valores por etapa */
+    .invest-solo {
+      position: static;
+      max-width: 540px;
+      margin: 44px auto 0;
+      text-align: center;
+    }
+
+    .invest-solo .invest-price {
+      justify-content: center;
+    }
+
+    .invest-solo .offer-note {
+      text-align: left;
+    }
+
+    @media (max-width: 860px) {
+      .deliverables {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="topline"></div>
@@ -56,7 +100,7 @@
           <span class="accent">e SEO Local</span>
         </h1>
         <span class="rule"></span>
-        <p class="cover-tags">Wireframe · Layout no Figma · SEO Local · Página de Links</p>
+        <p class="cover-tags">Osteopatia · Coluna · SEO Local · Página de Links</p>
         <p class="cover-client">Preparada para <strong>Dr. Hidelvani</strong></p>
       </div>
     </section>
@@ -79,364 +123,138 @@
             <small>15 dias úteis</small>
           </div>
           <div class="meta-card">
-            <span>Investimento</span>
-            <strong>R$ 1.500,00</strong>
-            <small>entrada + 3 parcelas</small>
+            <span>Etapas</span>
+            <strong>4 entregas</strong>
+            <small>do wireframe à página de links</small>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ BRIEFING ============ -->
+    <!-- ============ O QUE ESTÁ INCLUSO ============ -->
     <section class="section section--alt">
       <div class="shell">
         <div class="head-center">
-          <p class="eyebrow">Briefing</p>
-          <h2 class="section-title">
-            Duas páginas, dois tratamentos, dois públicos diferentes.
-          </h2>
+          <p class="eyebrow">O que está incluso</p>
+          <h2 class="section-title big">Quatro entregas</h2>
           <p class="section-sub">
-            Desenvolvimento de duas Landing Pages estratégicas — uma direcionada para
-            <strong>Osteopatia</strong> e outra para <strong>tratamentos relacionados à Coluna</strong> —
-            incluindo planejamento da estrutura, prototipação de alta fidelidade, configuração de
-            SEO local e página de links para o Instagram.
+            Duas Landing Pages — uma de <strong>Osteopatia</strong> e uma de <strong>Coluna</strong> —
+            com SEO local e uma página de links para o Instagram.
           </p>
         </div>
 
-        <div class="summary">
-          <article class="summary-item">
-            <span class="summary-check" aria-hidden="true">✓</span>
-            <div>
-              <h3>Landing Page · Osteopatia</h3>
-              <p>Página dedicada ao tratamento osteopático, com estrutura e argumentos próprios para esse público.</p>
-            </div>
+        <div class="deliverables">
+          <article class="includes deliverable">
+            <p class="includes-label">Etapa 01 · 4 dias úteis</p>
+            <h3>Wireframe das duas páginas</h3>
+            <ul>
+              <li class="dot">Estrutura da Landing Page de Osteopatia</li>
+              <li class="dot">Estrutura da Landing Page de Coluna</li>
+              <li class="dot">Fluxo de navegação de cada página</li>
+              <li class="dot">Hierarquia das informações e ordem das seções</li>
+            </ul>
           </article>
-          <article class="summary-item">
-            <span class="summary-check" aria-hidden="true">✓</span>
-            <div>
-              <h3>Landing Page · Coluna</h3>
-              <p>Página dedicada aos tratamentos relacionados à coluna, falando diretamente com quem busca alívio de dor.</p>
-            </div>
+
+          <article class="includes deliverable">
+            <p class="includes-label">Etapa 02 · 6 dias úteis</p>
+            <h3>Layout final no Figma</h3>
+            <ul>
+              <li class="dot">Protótipo completo da página de Osteopatia</li>
+              <li class="dot">Protótipo completo da página de Coluna</li>
+              <li class="dot">Identidade visual, tipografia e componentes</li>
+              <li class="dot">Elementos de conversão em cada página</li>
+            </ul>
           </article>
-          <article class="summary-item">
-            <span class="summary-check" aria-hidden="true">✓</span>
-            <div>
-              <h3>SEO Local</h3>
-              <p>Otimização das páginas para os serviços e para as cidades da região de atendimento.</p>
-            </div>
+
+          <article class="includes deliverable">
+            <p class="includes-label">Etapa 03 · 3 dias úteis</p>
+            <h3>SEO local</h3>
+            <ul>
+              <li class="dot">Otimização das páginas para Osteopatia e Coluna</li>
+              <li class="dot">Palavras-chave das cidades da região de atendimento</li>
+              <li class="dot">Títulos, descrições e cabeçalhos de cada página</li>
+            </ul>
           </article>
-          <article class="summary-item">
-            <span class="summary-check" aria-hidden="true">✓</span>
-            <div>
-              <h3>Página de Links</h3>
-              <p>Uma página personalizada para o perfil do Instagram, reunindo os principais canais de contato.</p>
-            </div>
+
+          <article class="includes deliverable">
+            <p class="includes-label">Etapa 04 · 2 dias úteis</p>
+            <h3>Página de links</h3>
+            <ul>
+              <li class="dot">Página personalizada para o link da bio do Instagram</li>
+              <li class="dot">Acesso direto às duas Landing Pages</li>
+              <li class="dot">WhatsApp, redes sociais e localização</li>
+              <li class="dot">Otimizada para abrir rápido no celular</li>
+            </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ O CAMINHO ============ -->
+    <!-- ============ PRAZO ============ -->
     <section class="section">
       <div class="shell">
         <div class="head-center">
-          <p class="eyebrow">O caminho</p>
-          <h2 class="section-title big">
-            Quatro etapas, do wireframe à publicação.
-          </h2>
+          <p class="eyebrow">Prazo</p>
+          <h2 class="section-title big">Quando fica pronto</h2>
         </div>
 
-        <div class="timeline">
-          <div class="timeline-track" aria-hidden="true">
-            <span class="timeline-dot">1</span>
-            <span class="timeline-dot">2</span>
-            <span class="timeline-dot">3</span>
-            <span class="timeline-dot">4</span>
-          </div>
-          <ol class="timeline-cards">
-            <li>
-              <span class="timeline-num" aria-hidden="true">1</span>
-              <h3>Wireframe</h3>
-              <p>A estrutura das duas páginas: fluxo de navegação, hierarquia das informações e organização das seções.</p>
-            </li>
-            <li>
-              <span class="timeline-num" aria-hidden="true">2</span>
-              <h3>Layout Final</h3>
-              <p>Os protótipos de alta fidelidade no Figma, com identidade visual, componentes e elementos de conversão.</p>
-            </li>
-            <li>
-              <span class="timeline-num" aria-hidden="true">3</span>
-              <h3>SEO Local</h3>
-              <p>Configuração das páginas para aparecer nas buscas por Osteopatia e Coluna na sua região.</p>
-            </li>
-            <li>
-              <span class="timeline-num" aria-hidden="true">4</span>
-              <h3>Página de Links</h3>
-              <p>A página de links do Instagram, reunindo contatos e as duas landing pages em um só lugar.</p>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ETAPA 1 · WIREFRAME ============ -->
-    <section class="section section--alt">
-      <div class="shell service">
-        <div class="service-intro">
-          <p class="eyebrow">Primeira etapa · 4 dias úteis</p>
-          <h2 class="display">Wireframe</h2>
-          <span class="rule rule--left"></span>
+        <div class="stat-callout">
+          <strong>15</strong>
           <p>
-            Estruturação dos wireframes das duas Landing Pages, definindo o fluxo de navegação,
-            a hierarquia das informações e a organização das principais seções de cada página.
-            É aqui que a página é resolvida antes de qualquer decisão visual.
+            dias úteis para a conclusão de todas as etapas, contados a partir da confirmação do
+            projeto e do envio dos materiais.
+            <span>Os prazos de cada etapa são estimados e podem sofrer pequenos ajustes conforme o tempo de retorno para aprovação.</span>
           </p>
-          <div class="callout">
-            <span>Valor da etapa</span>
-            <p>R$ 300,00 · prazo de 4 dias úteis</p>
-          </div>
-        </div>
-        <div class="includes">
-          <p class="includes-label">O que inclui</p>
-          <ul>
-            <li class="dot">Wireframe da Landing Page de Osteopatia — estrutura e organização do conteúdo</li>
-            <li class="dot">Wireframe da Landing Page de Coluna — estrutura e organização do conteúdo</li>
-            <li class="dot">Definição do fluxo de navegação de cada página</li>
-            <li class="dot">Hierarquia das informações e ordem das seções</li>
-            <li class="dot">Posicionamento dos pontos de contato e das chamadas para ação</li>
-          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ============ ETAPA 2 · LAYOUT FINAL ============ -->
-    <section class="section">
-      <div class="shell service">
-        <div class="service-intro">
-          <p class="eyebrow">Segunda etapa · 6 dias úteis</p>
-          <h2 class="display">Layout Final<br>no Figma</h2>
-          <span class="rule rule--left"></span>
-          <p>
-            Desenvolvimento dos protótipos de alta fidelidade das duas Landing Pages no Figma,
-            com aplicação da identidade visual, hierarquia tipográfica, componentes, seções e
-            elementos de conversão. O layout final, pronto para ser programado.
-          </p>
-          <div class="callout">
-            <span>Valor da etapa</span>
-            <p>R$ 800,00 · prazo de 6 dias úteis</p>
-          </div>
-        </div>
-        <div class="includes">
-          <p class="includes-label">O que inclui</p>
-          <ul>
-            <li class="dot">Protótipo visual completo da Landing Page de Osteopatia</li>
-            <li class="dot">Protótipo visual completo da Landing Page de Coluna</li>
-            <li class="dot">Aplicação da identidade visual em todas as seções</li>
-            <li class="dot">Hierarquia tipográfica e sistema de componentes</li>
-            <li class="dot">Elementos de conversão posicionados ao longo das páginas</li>
-            <li class="dot">Protótipo navegável no Figma, com acesso para acompanhamento</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ETAPA 3 · SEO LOCAL ============ -->
-    <section class="section section--alt">
-      <div class="shell service">
-        <div class="service-intro">
-          <p class="eyebrow">Terceira etapa · 3 dias úteis</p>
-          <h2 class="display">SEO<br>Local</h2>
-          <span class="rule rule--left"></span>
-          <p>
-            Configuração inicial de SEO das páginas com foco na presença regional do Dr. Hidelvani.
-            O trabalho contempla a otimização das páginas para os serviços de Osteopatia e Coluna,
-            além da configuração estratégica de palavras-chave relacionadas às cidades da região
-            de atendimento.
-          </p>
-          <div class="callout">
-            <span>Valor da etapa</span>
-            <p>R$ 250,00 · prazo de 3 dias úteis</p>
-          </div>
-        </div>
-        <div class="includes">
-          <p class="includes-label">O que inclui</p>
-          <ul>
-            <li class="dot">Otimização da página de Osteopatia para o seu termo principal</li>
-            <li class="dot">Otimização da página de Coluna para os tratamentos relacionados</li>
-            <li class="dot">Configuração estratégica de palavras-chave por cidade da região de atendimento</li>
-            <li class="dot">Títulos, descrições e estrutura de cabeçalhos de cada página</li>
-            <li class="dot">Ajustes de conteúdo para reforçar a presença regional</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ ETAPA 4 · PÁGINA DE LINKS ============ -->
-    <section class="section">
-      <div class="shell service">
-        <div class="service-intro">
-          <p class="eyebrow">Quarta etapa · 2 dias úteis</p>
-          <h2 class="display">Página<br>de Links</h2>
-          <span class="rule rule--left"></span>
-          <p>
-            Desenvolvimento de uma página personalizada de links para utilização no perfil do
-            Instagram, reunindo os principais canais de contato e as páginas do Dr. Hidelvani
-            em um só endereço.
-          </p>
-          <div class="callout">
-            <span>Valor da etapa</span>
-            <p>R$ 150,00 · prazo de 2 dias úteis</p>
-          </div>
-        </div>
-        <div class="includes">
-          <p class="includes-label">O que inclui</p>
-          <ul>
-            <li class="dot">Página personalizada para o link da bio do Instagram</li>
-            <li class="dot">Acesso direto às duas Landing Pages</li>
-            <li class="dot">Botões para WhatsApp, redes sociais e localização</li>
-            <li class="dot">Links livres, definidos por você</li>
-            <li class="dot">Otimizada para abrir rápido no celular</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ QUANDO ============ -->
+    <!-- ============ INVESTIMENTO ============ -->
     <section class="section section--alt">
       <div class="shell">
-        <p class="eyebrow">Quando</p>
-        <h2 class="section-title big">Prazo total do projeto</h2>
-
-        <div class="conditions">
-          <div class="conditions-text">
-            <p>
-              O prazo estimado para conclusão de todas as etapas é de <strong>15 dias úteis</strong>,
-              contados a partir da confirmação do projeto e do recebimento dos materiais e
-              informações necessários para sua execução.
-            </p>
-            <p>
-              Os prazos de cada etapa são estimados e podem sofrer pequenos ajustes conforme o
-              andamento do projeto e o tempo de retorno para aprovação.
-            </p>
-            <div class="callout">
-              <span>Início do projeto</span>
-              <p>O projeto tem início após a confirmação e o pagamento da entrada.</p>
-            </div>
-          </div>
-
-          <div class="conditions-list">
-            <h3>Etapas</h3>
-            <ol>
-              <li>Wireframe das duas páginas — 4 dias úteis</li>
-              <li>Layout final no Figma — 6 dias úteis</li>
-              <li>Configuração de SEO local — 3 dias úteis</li>
-              <li>Página de links para o Instagram — 2 dias úteis</li>
-            </ol>
-          </div>
+        <div class="head-center">
+          <p class="eyebrow">Investimento</p>
+          <h2 class="section-title big">Valor do projeto</h2>
+          <p class="section-sub">Tudo o que está descrito acima, em um valor único.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- ============ QUANTO ============ -->
-    <section class="section">
-      <div class="shell">
-        <p class="eyebrow">Quanto</p>
-        <h2 class="section-title big">Resumo do investimento</h2>
-        <p class="section-sub">
-          Cada etapa tem o seu valor individual e é entregue na sequência, com aprovação antes de seguir para a próxima.
-        </p>
+        <aside class="invest-offer invest-solo">
+          <p class="invest-label">Investimento total</p>
+          <p class="invest-price"><span>4x de R$</span>375</p>
+          <p class="invest-terms">
+            sem juros · total de <strong>R$ 1.500,00</strong> · parcelamento em mais vezes
+            no cartão, sujeito às taxas da plataforma
+          </p>
 
-        <div class="invest">
-          <div class="invest-items">
-            <article class="price-row">
-              <span class="price-step">01</span>
-              <div class="price-info">
-                <h3>Wireframe — 2 Landing Pages</h3>
-                <p>Estrutura, fluxo de navegação e hierarquia das informações</p>
-              </div>
-              <strong class="price-value">R$ 300</strong>
-            </article>
-
-            <article class="price-row">
-              <span class="price-step">02</span>
-              <div class="price-info">
-                <h3>Layout Final — 2 Landing Pages</h3>
-                <p>Protótipos de alta fidelidade no Figma</p>
-              </div>
-              <strong class="price-value">R$ 800</strong>
-            </article>
-
-            <article class="price-row">
-              <span class="price-step">03</span>
-              <div class="price-info">
-                <h3>Configuração de SEO Local</h3>
-                <p>Otimização por serviço e por cidade da região de atendimento</p>
-              </div>
-              <strong class="price-value">R$ 250</strong>
-            </article>
-
-            <article class="price-row">
-              <span class="price-step">04</span>
-              <div class="price-info">
-                <h3>Página de Links para Instagram</h3>
-                <p>Página personalizada com os principais canais de contato</p>
-              </div>
-              <strong class="price-value">R$ 150</strong>
-            </article>
-
-            <div class="price-total">
-              <span>Total das etapas</span>
-              <strong>R$ 1.500</strong>
-            </div>
+          <div class="offer-note">
+            <span>Início do projeto</span>
+            <p>
+              O projeto tem início após a confirmação e o pagamento da primeira parcela,
+              no valor de R$ 375,00.
+            </p>
           </div>
 
-          <aside class="invest-offer">
-            <p class="invest-label">Formas de pagamento</p>
-            <p class="offer-from">entrada de R$ 375,00 e mais</p>
-            <p class="invest-price"><span>3x de R$</span>375</p>
-            <p class="invest-terms">
-              sem juros · total de <strong>R$ 1.500,00</strong> · parcelamento em mais vezes
-              no cartão, sujeito às taxas da plataforma
-            </p>
-
-            <div class="offer-perk">
-              <span>Entrega por etapas</span>
-              <p>
-                Cada etapa é entregue e aprovada antes do início da próxima, para você acompanhar
-                o projeto do wireframe ao layout final.
-              </p>
-            </div>
-
-            <div class="offer-note">
-              <span>Início do projeto</span>
-              <p>
-                O projeto terá início após a confirmação e o pagamento da entrada de R$ 375,00.
-              </p>
-            </div>
-
-            <button class="pix-box" type="button" data-copy="16982006729" aria-label="Copiar chave Pix 16982006729">
-              <span class="pix-label">Chave Pix</span>
-              <strong>16982006729</strong>
-              <small class="copy-hint">Clique para copiar</small>
-            </button>
-            <p class="fine-print">
-              O comprovante pode ser enviado por WhatsApp ou e-mail.
-            </p>
-          </aside>
-        </div>
+          <button class="pix-box" type="button" data-copy="16982006729" aria-label="Copiar chave Pix 16982006729">
+            <span class="pix-label">Chave Pix</span>
+            <strong>16982006729</strong>
+            <small class="copy-hint">Clique para copiar</small>
+          </button>
+          <p class="fine-print">
+            O comprovante pode ser enviado por WhatsApp ou e-mail.
+          </p>
+        </aside>
       </div>
     </section>
 
     <!-- ============ OBSERVAÇÕES ============ -->
-    <section class="section section--alt">
+    <section class="section">
       <div class="shell">
         <p class="eyebrow">Observações</p>
         <h2 class="section-title big">Pontos importantes</h2>
 
         <ul class="notes">
           <li>O orçamento contempla exclusivamente os serviços descritos nesta proposta.</li>
-          <li>Eventuais solicitações que impliquem novas páginas, funcionalidades ou alterações significativas no escopo poderão ser orçadas separadamente.</li>
-          <li>Esta proposta contempla o design das páginas — wireframe, layout final no Figma, SEO local e página de links.</li>
+          <li>Novas páginas, funcionalidades ou alterações significativas no escopo poderão ser orçadas separadamente.</li>
         </ul>
       </div>
     </section>
