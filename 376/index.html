@@ -20,12 +20,34 @@
     })();
   </script>
   <style>
+    /* Espaçamento mais próximo: a proposta inteira em poucas rolagens */
+    .cover {
+      min-height: auto;
+      padding: clamp(56px, 8vw, 100px) 0;
+    }
+
+    .cover-client {
+      margin-top: 26px;
+    }
+
+    .section {
+      padding: clamp(44px, 5vw, 72px) 0;
+    }
+
+    .head-center .section-sub {
+      margin-top: 14px;
+    }
+
     /* Grade das entregas: quatro cartões, tudo que está incluso de relance */
     .deliverables {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 48px;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .deliverable {
+      padding: 28px 26px;
     }
 
     .deliverable .includes-label {
@@ -41,12 +63,27 @@
       line-height: 1.2;
     }
 
+    .stat-callout {
+      margin-top: 16px;
+    }
+
     /* Card único de investimento, sem a coluna de valores por etapa */
     .invest-solo {
       position: static;
       max-width: 540px;
-      margin: 44px auto 0;
+      margin: 30px auto 0;
       text-align: center;
+    }
+
+    .notes {
+      max-width: 540px;
+      margin: 22px auto 0;
+      gap: 10px;
+    }
+
+    .notes li {
+      padding: 16px 20px;
+      font-size: 0.88rem;
     }
 
     .invest-solo .invest-price {
@@ -96,11 +133,11 @@
       <div class="shell cover-inner">
         <p class="eyebrow">Proposta comercial · 2026</p>
         <h1>
-          Duas Landing Pages<br>
-          <span class="accent">e SEO Local</span>
+          Estratégia de<br>
+          <span class="accent">Posicionamento Digital</span>
         </h1>
         <span class="rule"></span>
-        <p class="cover-tags">Osteopatia · Coluna · SEO Local · Página de Links</p>
+        <p class="cover-tags">Duas Landing Pages · SEO Local · Página de Links</p>
         <p class="cover-client">Preparada para <strong>Dr. Hidelvani</strong></p>
       </div>
     </section>
@@ -187,16 +224,6 @@
             </ul>
           </article>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ PRAZO ============ -->
-    <section class="section">
-      <div class="shell">
-        <div class="head-center">
-          <p class="eyebrow">Prazo</p>
-          <h2 class="section-title big">Quando fica pronto</h2>
-        </div>
 
         <div class="stat-callout">
           <strong>15</strong>
@@ -209,8 +236,8 @@
       </div>
     </section>
 
-    <!-- ============ INVESTIMENTO ============ -->
-    <section class="section section--alt">
+    <!-- ============ INVESTIMENTO E OBSERVAÇÕES ============ -->
+    <section class="section">
       <div class="shell">
         <div class="head-center">
           <p class="eyebrow">Investimento</p>
@@ -243,14 +270,6 @@
             O comprovante pode ser enviado por WhatsApp ou e-mail.
           </p>
         </aside>
-      </div>
-    </section>
-
-    <!-- ============ OBSERVAÇÕES ============ -->
-    <section class="section">
-      <div class="shell">
-        <p class="eyebrow">Observações</p>
-        <h2 class="section-title big">Pontos importantes</h2>
 
         <ul class="notes">
           <li>O orçamento contempla exclusivamente os serviços descritos nesta proposta.</li>
